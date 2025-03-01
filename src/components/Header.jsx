@@ -35,15 +35,16 @@ function Header() {
         <div data-aos="fade-down" className="fixed top-0 left-0  w-full z-50">
             <div
                 className={`flex flex-col items-center justify-center w-full p-3 z-50 transition-all duration-300 ${isScrolled
-                        ? "bg-black/40 text-white font-medium backdrop-blur-lg border-b border-white/20 shadow-lg py-5"
-                        : "bg-transparent border-transparent"
+                    ? "bg-black/40 text-white font-medium backdrop-blur-lg border-b border-white/20 shadow-lg py-5"
+                    : "bg-transparent border-transparent"
                     }`}
             >
                 <div className="flex flex-row items-end justify-end lg:justify-center lg:items-center w-full max-w-screen-2xl mx-auto">
-                    <div className="absolute top-3 left-1 rounded-full bg-black/40 w-[50px] h-[50px] lg:w-[55px] lg:h-[55px]">
+                    <div className="absolute top-13 left-1 rounded-full bg-black/40 w-[50px] h-[50px] lg:w-[55px] lg:h-[55px]">
                         <Image
                             src="/images/canva13.png"
                             alt="Logo"
+                            style={{ borderRadius: 20 }}
                             className=""
                             width={50}
                             height={50}
@@ -55,8 +56,8 @@ function Header() {
                                 <div
                                     onClick={() => handleLinkClick(link.link.substring(1))}
                                     className={`text-center font-semibold hover:bg-white hover:text-custom-color-secondary hover:font-medium rounded-2xl px-4 py-2 ${activeSection === link.link.substring(1)
-                                            ? "bg-white text-custom-color-secondary"
-                                            : ""
+                                        ? "bg-white text-custom-color-secondary"
+                                        : ""
                                         }`}
                                 >
                                     <p className="text-base">{link.title}</p>
@@ -84,8 +85,8 @@ function Header() {
                                     <div
                                         onClick={() => handleLinkClick(link.link.substring(1))}
                                         className={`text-center font-semibold hover:bg-white hover:text-custom-color-secondary hover:font-medium rounded-2xl px-4 py-2 ${activeSection === link.link.substring(1)
-                                                ? "bg-white text-xl font-semibold text-custom-color-secondary"
-                                                : ""
+                                            ? "bg-white text-xl font-semibold text-custom-color-secondary"
+                                            : ""
                                             }`}
                                     >
                                         <p className="text-xl">{link.title}</p>
