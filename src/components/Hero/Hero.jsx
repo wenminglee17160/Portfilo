@@ -84,7 +84,7 @@ const HeroSection = () => {
                 onClick={handleDownload}
                 className="px-6 py-2 w-full border-1 border-white-transparent sm:w-auto rounded-full mr-0 sm:mr-4 bg-[#FFF] text-black text-lg font-medium hover:bg-custom-text text-center"
               >
-                Download CV
+                Download Resume
               </button>
             </div>
           </div>
@@ -95,9 +95,10 @@ const HeroSection = () => {
             <div className="rounded-full bg-black/40 w-[150px] h-[150px] lg:w-[250px] lg:h-[250px] relative">
               <Image
                 src="/images/canva13.png"
-                alt="Surendar, Frontend Developer"
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="WenMing Lee, Fullstack Developer"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 border-radius-5"
                 width={230}
+                style={{ borderRadius: 100 }}
                 height={230}
               />
             </div>
